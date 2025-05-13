@@ -1,0 +1,7 @@
+[user]
+	email = luizfernandodematoscarvalho@gmail.com
+	name = OLuizFernando
+[credential]
+	helper = store
+[core]
+	editor = code --wait
