@@ -1,0 +1,46 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 24,
+  "spacing": 4,
+  "modules-left": [
+    "hyprland/workspaces",
+    "wlr/taskbar"
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "custom/power"
+  ],
+  "wlr/taskbar": {
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "ignore-list": [
+      "foot"
+    ]
+  },
+  "wlr/workspaces": {
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1"
+  },
+  "clock": {
+    "format": " {:%d/%m/%Y · %H:%M} ",
+    "tooltip-format": "<big>{:%A, %d de %B de %Y}</big>\n<tt><small>{calendar}</small></tt>"
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%  ",
+    "format-muted": "󰝟 Muted  ",
+    "on-click": "pavucontrol",
+    "scroll-step": 5,
+    "format-icons": {
+      "default": "󰕾"
+    }
+  },
+  "custom/power": {
+    "format": "⏻  ",
+    "on-click": "nwg-bar"
+  }
+}
