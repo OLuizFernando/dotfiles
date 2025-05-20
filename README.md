@@ -1,2 +1,2 @@
-# dotfiles
+# .dotfiles
 My Arch Linux setup config files
